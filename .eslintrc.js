@@ -1,12 +1,12 @@
 module.exports = {
-  root: true,
-  parser: '@typescript-eslint/parser',
-  plugins: [
-    '@typescript-eslint',
-  ],
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    "prettier"
-  ],
+  extends: ['airbnb-typescript/base'],
+  parserOptions: {
+    project: './tsconfig.json'
+  },
+  rules: {
+    "@typescript-eslint/quotes": ["error", "double"]
+  },
+  env: {
+    "node": true
+  }
 };

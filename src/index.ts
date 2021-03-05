@@ -1,5 +1,5 @@
-import express from "express";
 import bodyParser from "body-parser";
+import express from "express";
 
 import defaultRoutes from "./routes/default.route";
 
@@ -9,6 +9,6 @@ app.use(bodyParser.json());
 
 app.use("/default", defaultRoutes);
 
-app.listen(process.env.PORT, () => {
+app.listen(3000, () => {
   console.log("The application is listening on port 3000");
 });
