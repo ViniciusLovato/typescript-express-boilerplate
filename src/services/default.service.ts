@@ -1,5 +1,5 @@
 function getHello(): string {
-  return "Hello World!";
+  return "Hello Worlds!";
 }
 
 export default {
